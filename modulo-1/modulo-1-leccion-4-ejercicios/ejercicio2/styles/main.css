@@ -1,0 +1,15 @@
+.container {
+    background-color: lightslategrey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    background-color: plum;
+    border: 2px solid black;
+}

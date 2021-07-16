@@ -1,0 +1,45 @@
+.container {
+    background-color: mediumpurple;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+.img {
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+
+.title{
+    box-sizing: border-box;
+    margin-left: 150px;
+}
+
+.item {
+    box-sizing: border-box;
+    border: 2px blue dotted;
+    padding: 20px;
+    
+
+}
+
+.item-1 {
+    width: 100%;
+}
+
+.item-2 {
+    width: 50%;
+}
+.item-3 {
+    width: 50%;
+}
+
+.item-4 {
+    width: 50%;
+}
+
+.item-5 {
+    width: 50%;
+}

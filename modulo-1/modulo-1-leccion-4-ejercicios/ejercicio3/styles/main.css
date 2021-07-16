@@ -1,0 +1,24 @@
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    height: 100px;
+    background-color: mediumpurple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.item {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
