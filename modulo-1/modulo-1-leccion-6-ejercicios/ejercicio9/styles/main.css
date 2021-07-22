@@ -1,0 +1,64 @@
+body{
+    background-color: silver;
+    
+}
+
+/*MOBILE*/
+.todo{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    background-color: yellow;
+}
+
+.footer{
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*TABLET*/
+@media all and (max-width: 1000px) and (min-width: 480px){
+    .todo{
+        display: flex;
+    }
+
+    .links{
+        position:absolute;
+        padding-right: 150px;
+    }
+    
+    .main{
+        position: relative;
+        margin-left: 200px;
+        display: flex;
+    }
+
+    .naranja{
+        background-color: orange;
+        width: 450px;
+        height: 200px;
+    }
+
+    .footer{
+        position: relative;
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*DESKTOP*/
+
+@media all and (min-width: 1000px){
+    
+}

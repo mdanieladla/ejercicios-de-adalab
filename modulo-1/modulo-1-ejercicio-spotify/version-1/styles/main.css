@@ -1,0 +1,55 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+/*se pone .header .logo, para acordarme de que es el logo del header, pero si solo pones .logo está bien*/
+.header .logo{
+    height: 35px;
+}
+
+.menu {
+    height: 20px;
+    
+}
+
+.trial {
+    background-color: rgb(72, 140, 241);
+    height: 50vh;
+    align-items: center;
+}
+
+.container{
+     margin: 0 15px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+
+}
+
+.titulo{
+    color: white;
+    position: relative;
+    top: 80px;
+}
+
+.parrafo{
+    color: white;
+    position: relative;
+    top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    background-color: green;
+    border: 5px solid green;
+    border-radius: 15px;
+    padding: 5px 30px;
+}

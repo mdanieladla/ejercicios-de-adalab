@@ -1,0 +1,11 @@
+.header {
+    background-color: plum;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+.main {
+    position: absolute;
+    top: 100px;
+}

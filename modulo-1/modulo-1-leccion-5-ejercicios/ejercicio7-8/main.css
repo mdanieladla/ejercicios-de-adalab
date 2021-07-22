@@ -1,0 +1,21 @@
+.que {
+    max-width: 600px;
+    width: 86%;
+    margin: auto;
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);*/
+}
+
+.button {
+    background-color: red;
+    color: white;
+    position: absolute;
+}
+
+.hola {
+    display: inline-block;
+    width: 500px;
+    border-bottom: 1px solid black;
+}
