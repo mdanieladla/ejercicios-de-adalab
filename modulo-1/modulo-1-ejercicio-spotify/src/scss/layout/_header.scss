@@ -1,5 +1,17 @@
-.page__header {
+.header {
+  background-color: black;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+/*se pone .header .logo, para acordarme de que es el logo del header, pero si solo pones .logo está bien*/
+.header .logo{
+  height: 35px;
+}
+
+.menu {
+  height: 20px;
+  
 }
