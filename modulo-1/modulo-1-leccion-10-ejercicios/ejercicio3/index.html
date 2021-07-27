@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Create an account</h1>
+        <h2>It's free and always will be</h2>
+      </div>
+      <form method="post">
+        <fieldset class="fieldset">
+          <div>
+            <legend>Datos personales</legend>
+            <label for="firstName"></label>
+            <input
+              placeholder="First Name"
+              type="text"
+              id="firstName"
+              name="fisrtName"
+              class="input"
+            />
+            <label for="lastName"></label>
+            <input
+              placeholder="Surname"
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="input"
+            />
+            <label for="email-mobile"></label>
+            <input
+              placeholder="Email or mobile number"
+              type="text"
+              id="email-mobile"
+              name="email-mobile"
+              class="input"
+            />
+            <label for="email-mobile"></label>
+            <input
+              placeholder="Re-enter email or mobile number"
+              type="text"
+              id="email-mobile"
+              name="email-mobile"
+              class="input"
+            />
+            <label for="password"></label>
+            <input
+              placeholder="New password"
+              type="password"
+              id="password"
+              name="password"
+              class="input"
+            />
+          </div>
+          <div class="birthday">
+            <label for="birthday-day">Birthday</label>
+            <select name="birthday-day" id="birthday-day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <label for="birthday-month"></label>
+            <select name="birthday-month" id="birthday-month">
+              <option value="enero">Enero</option>
+              <option value="febrero">Febrero</option>
+              <option value="marzo">Marzo</option>
+              <option value="abril">Abril</option>
+              <option value="mayo">Mayo</option>
+              <option value="junio">Junio</option>
+              <option value="julio">Julio</option>
+              <option value="agosto">Agosto</option>
+              <option value="septiembre">Septiembre</option>
+              <option value="octubre">Octubre</option>
+              <option value="noviembre">Noviembre</option>
+              <option value="diciembre">Diciembre</option>
+            </select>
+            <label for="birthday-year"></label>
+            <select name="birthday-year" id="birthday-year">
+              <option value="1940">1940</option>
+              <option value="1950">1950</option>
+              <option value="1960">1960</option>
+              <option value="1970">1970</option>
+              <option value="1980">1980</option>
+              <option value="1990">1990</option>
+              <!--Buscar forma fácil y rápida de hacer esto sin hacerlo manualmente y tardar años-->
+            </select>
+          </div>
+          <div class="sex">
+            <label for="female">Female</label>
+            <input type="radio" value="female" name="female" class="female" />
+            <label for="male">Male</label>
+            <input type="radio" value="male" name="male" class="male" />
+          </div>
+          <div class="height">
+            <label for="height">Altura en cm</label>
+            <input
+              type="number"
+              name="height"
+              id="height"
+              min="50"
+              max="250"
+              value="150"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="textarea">
+            <textarea name="profile" id="profile" cols="40" rows="10">
+            Escribe algo sobre ti</textarea
+            >
+          </div>
+          <div class="button-account">
+            <label for="button">Create an account</label>
+            <input
+              type="submit"
+              value="Create an account"
+              name="submit"
+              class="button"
+            />
+            <input type="hidden" id="navegador" value="navegador" />
+          </div>
+        </fieldset>
+        <div class="terms">
+          <label for="terms">Accept the terms and conditions</label>
+          <input type="checkbox" name="terms" id="terms" class="checkbox" />
+        </div>
+        <input
+          type="reset"
+          value="Restaurar valores por defecto"
+          class="reset"
+        />
+      </form>
+    </div>
+  </body>
+</html>
