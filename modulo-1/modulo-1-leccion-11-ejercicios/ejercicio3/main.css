@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 60% 20%;
+}
+
+.item{
+    border: solid 2px red;
+    padding: 5px;
+}
+
+.item1 {
+    grid-column: span 12;
+}
+
+.item2 {
+    grid-column: span 4;
+}
+
+.item3 {
+  grid-column: 5 / 13;
+}
+
+.item4{
+    grid-column: 1 / 13;
+}
