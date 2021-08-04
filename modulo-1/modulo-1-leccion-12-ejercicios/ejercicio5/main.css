@@ -1,0 +1,44 @@
+.container {
+    margin: auto;
+    margin-top: 100px;
+    border: solid 2px lightgray;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #099d8d;
+}
+
+.subtitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;   
+}
+
+input {
+    font-size: 16px;
+    animation-duration: 3s;
+    animation-name: email;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes email {
+    from {
+        transform: scale(1) rotate(10deg);
+        opacity: 0;
+        color: lightgray;
+    }
+
+    to {
+        transform: scale(3);
+        opacity: 1;
+    }
+}

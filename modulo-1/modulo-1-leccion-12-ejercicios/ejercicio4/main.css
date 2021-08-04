@@ -1,0 +1,31 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./ejercicio.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 100px;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: intro;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes intro {
+    from {
+        transform: scale(10) rotate(-360deg); /*10deg es para que venga desde arriba el title, como si bajara de repente desde debajo de la barra de navegacion*/ /*-360deg es para que venga desde la izquierda dando un giro de 360grados y se coloque en el centro*/
+        opacity: 0; /*para que venga la animacion mas transparente y en blanco al principio*/
+        color: white;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1; /*y a medida que llega la animacion se pone mas opaca y en el color que tiene el title en este caso*/
+    }
+}
