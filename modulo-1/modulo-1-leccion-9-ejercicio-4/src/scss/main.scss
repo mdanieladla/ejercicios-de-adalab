@@ -1,0 +1,34 @@
+@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';
+
+/*.header--logo el logo de mi header*/
+/*.header--menu__item dentro de header, mi bloque menu y dentro de menu, mqueto mi elemento item*/ 
+.header--menu__link {
+    color: red;
+}/*clase para cuando tenga links dentro del menu*/
+/*.header--menu__item__highlight*/
+/*Cada cosa que sea del header se pone luego en el partial del scss de header, y en el main.scss solo se quedarían los import*/
+
+/*anidación*/
+.main {
+    color: yellow;
+    p{
+        color: red;
+    }
+    a {
+        color: yellow;
+    }
+/*la anidación viene muy bien para los media queries:*/
+    @media (min-width: 768px) {
+        a {
+            background-color: green;
+        }
+    } 
+}
+
