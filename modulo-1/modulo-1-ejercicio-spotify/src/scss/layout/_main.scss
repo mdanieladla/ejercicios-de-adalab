@@ -2,36 +2,28 @@
     background-color: rgb(72, 140, 241);
     height: 50vh;
     align-items: center;
-}
-
-.container{
-     margin: 0 15px;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-
-}
-
-.titulo{
-    color: white;
-    position: relative;
-    top: 80px;
-}
-
-.parrafo{
-    color: white;
-    position: relative;
-    top: 50px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-.button{
+    &__container{
+        margin: 0 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+     &--title {
+        color: white;
+        position: relative;
+        top: 80px; 
+     }
+     &--paragraph{
+        color: white;
+        position: relative;
+        top: 50px; 
+     }
+     &--button{
     background-color: green;
     border: 5px solid green;
     border-radius: 15px;
     padding: 5px 30px;
+     }
+    }
 }
+
