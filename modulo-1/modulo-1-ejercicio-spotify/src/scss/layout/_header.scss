@@ -4,14 +4,17 @@
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  &__logo {
+    height: 35px;
+  }
+  &__menu {
+     height: 20px;
+  }
 }
 
-/*se pone .header .logo, para acordarme de que es el logo del header, pero si solo pones .logo está bien*/
+/*se pone .header .logo, para acordarme de que es el logo del header, pero si solo pones .logo está bien
 .header .logo{
   height: 35px;
 }
+*/
 
-.menu {
-  height: 20px;
-  
-}
