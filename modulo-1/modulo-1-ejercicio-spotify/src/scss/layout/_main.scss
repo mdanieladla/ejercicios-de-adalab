@@ -1,29 +1,26 @@
 .trial {
     background-color: rgb(72, 140, 241);
     height: 50vh;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
     &__container{
-        margin: 0 15px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-     &--title {
-        color: white;
-        position: relative;
-        top: 80px; 
-     }
-     &--paragraph{
-        color: white;
-        position: relative;
-        top: 50px; 
-     }
-     &--button{
-    background-color: green;
-    border: 5px solid green;
-    border-radius: 15px;
-    padding: 5px 30px;
-     }
-    }
+      margin: 0 15px;
+   &--title {
+      color: white;
+   }
+   &--paragraph{
+      color: white;
+   }
+   &--button{
+  background-color: green;
+  border: 5px solid green;
+  border-radius: 15px;
+  padding: 5px 30px;
+   }
+   &--small {
+      text-align: center;
+   }
+  }
 }
 
