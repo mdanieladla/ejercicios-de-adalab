@@ -63,17 +63,17 @@ const thirdDogName = 'Lana';
 
 const dog1 = document.querySelector('.dog1');
 
-dog1.innerHTML = `${firstDogImage} ${firstDogName}`;
+dog1.innerHTML = `<img src="${firstDogImage}"/> ${firstDogName}`;
 
 const dog2 = document.querySelector('.dog2');
 
-dog2.innerHTML = `${secondDogImage} ${secondDogName}`;
+dog2.innerHTML = `<img src="${secondDogImage}"/> ${secondDogName}`;
 
 const dog3 = document.querySelector('.dog3');
 
 //const content3 = `${thirdDogImage} ${thirdDogName}`; esta linea da el mismo resultado que hacerlo como lo he hecho debajo en el linea 79.
 
-dog3.innerHTML = `${thirdDogImage} ${thirdDogName}`;
+dog3.innerHTML = `<img src="${thirdDogImage}"/> ${thirdDogName}`;
 
 // EJERCICIO 9: cuantas letras tiene mi nombre.
 const name = "María Daniela Darnea";
