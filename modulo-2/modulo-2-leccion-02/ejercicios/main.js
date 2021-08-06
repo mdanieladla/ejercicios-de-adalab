@@ -78,7 +78,8 @@ dog3.innerHTML = `<img src="${thirdDogImage}"/> ${thirdDogName}`;
 // EJERCICIO 9: cuantas letras tiene mi nombre.
 const name = "María Daniela Darnea";
 
-console.log('El nombre de mi compañera es ' + `${name}` + ' y está compuesto por ' + `${name.length}` + ' caracteres');
+/*console.log('El nombre de mi compañera es ' + `${name}` + ' y está compuesto por ' + `${name.length}` + ' caracteres');*/
+console.log(`El nombre de mi compañera es ${name} y está compuesto por ${name.length} caracteres`);
 
 // EJERCICIO 10:
 const edad = document.querySelector('.age');
