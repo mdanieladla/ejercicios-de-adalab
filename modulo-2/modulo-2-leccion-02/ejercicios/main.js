@@ -76,10 +76,10 @@ const dog3 = document.querySelector('.dog3');
 dog3.innerHTML = `<img src="${thirdDogImage}"/> ${thirdDogName}`;
 
 // EJERCICIO 9: cuantas letras tiene mi nombre.
-const name = "María Daniela Darnea";
+const nombre = "María Daniela Darnea";
 
-/*console.log('El nombre de mi compañera es ' + `${name}` + ' y está compuesto por ' + `${name.length}` + ' caracteres');*/
-console.log(`El nombre de mi compañera es ${name} y está compuesto por ${name.length} caracteres`);
+/*console.log('El nombre de mi compañera es ' + `${name}` + ' y está compuesto por ' + `${name.length}` + ' caracteres'); --- > si declaro la constante como name me sale tachada y me pone que esta deprecated */
+console.log(`El nombre de mi compañera es ${nombre} y está compuesto por ${nombre.length} caracteres`);
 
 // EJERCICIO 10:
 const edad = document.querySelector('.age');
