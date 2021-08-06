@@ -31,6 +31,25 @@ body {
     align-items: center;
 }
 
+.estrella-blanca {
+    width: 30px;
+    height: 30px;
+    background-color: wheat;
+    position: relative;
+    top: 60px;
+    left: 110px;
+    transform: rotate(35deg);
+}
+
+.estrella-blanca2{
+    width: 30px;
+    height: 30px;
+    background-color: wheat;
+    position: relative;
+    top: 60px;
+    left: 80px;
+    transform: rotate(-10deg);
+}
 .nota {
     font-weight: bold;
 }
@@ -39,6 +58,7 @@ body {
     color: black;
     font-size: 18px;
     font-weight: bold;
+    margin-left: 7px;
 }
 
 .description{
@@ -46,6 +66,7 @@ body {
     font-size: 17px;    
     position: relative;
     top: 0px;
+    margin-left: 8px;
 }
 
 .button {
@@ -58,6 +79,8 @@ body {
 
 .grey {
     background-color: lightsteelblue;
+    margin-left: 7px;
+    margin-right: 5px;
 }
 
 .white {
