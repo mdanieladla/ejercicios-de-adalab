@@ -3,18 +3,21 @@
 // avatar por defecto
 const DEFAULT_AVATAR = 'http://placehold.it/300x300';
 // avatar que eligió el usuario al registrarse
-//let userAvatar = 'http://www.fillmurray.com/300/300';
+let userAvatar = 'http://www.fillmurray.com/300/300';
 
-let userAvatar = null; //como null es false se me ejecuta la imagen por defecto
+//let userAvatar = '';//como '' es false, por lo que se me ejecuta la imagen por defecto. 
+//'http://www.fillmurray.com/300/300' si dejo la imagen en img.src se me ejecutaria la primera imagen porque es true; 
 
 const img = document.querySelector('.user__avatar');
 
-img.src = 'http://www.fillmurray.com/300/300';
+img.src = userAvatar;
 
-//let userAvatar = ''; -> para hacer que no sea vea ningún contenido dentro de la imagen.
+//img.src = `${userAvatar || DEFAULT_AVATAR}`; //si es true se queda con la primera opcion, si es false se ejecuta la segunda
 
-//img.innerHTML = userAvatar;
 
-//img.innerHTML = `${DEFAULT_AVATAR || userAvatar}`;
-
-img.src = `${userAvatar || DEFAULT_AVATAR}`; //si es true se queda con la primera opcion, si es false se ejecuta la segunda
+//Como hacer este ejercicio con un IF
+// if(userAvatar=== '') {
+//    img.src=DEFAULT_AVATAR;
+// } else {
+//    img.src=userAvatar;
+// }
