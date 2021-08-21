@@ -54,16 +54,16 @@ console.log(`El precio sin IVA es:  ${precioo}, IVA: 2,1 y Total: ${total}`);
 // EJERCICIO 4:
 
 function parImpar(a) {
-     return a;
+    if(a % 2 === 0) {
+       console.log('true');
+       return true;
+    } else {
+        console.log('false');
+        return false;
+    } 
   }   
    
-const imparPar = parImpar(10); 
-  if(imparPar % 2 === 0) {
-        console.log('True');
-    } else {
-        console.log('False');
-    }
-
+  parImpar(11);
 
 //Ejemplo casa: meter x gramos pastel y que sepa en cuantas porciones dividir el pastel. 1  porcion son 70g
 
