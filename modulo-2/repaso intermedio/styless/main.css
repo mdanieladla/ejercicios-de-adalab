@@ -7,6 +7,14 @@ body {
     align-items: center;
 }
 
+.containerHappy {
+    background-color: #ffcc00;
+}
+
+.containerSad {
+    background-color: #ff9900;
+}
+
 .face {
     display: grid;
     grid-template-rows: 60% 20% 20%;
