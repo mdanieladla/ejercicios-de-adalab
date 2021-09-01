@@ -1,5 +1,7 @@
 'use strict'
 
+//Ejercicio 1:
+//*//
 let arr = [];
 
 function get100Numbers(){
@@ -8,4 +10,12 @@ function get100Numbers(){
     }
     return arr;
 }
+//*//
 
+//Ejercicio 2:
+//*//
+function getReversed100Numbers () {
+    arr.reverse();
+    return arr;
+}
+//*//
