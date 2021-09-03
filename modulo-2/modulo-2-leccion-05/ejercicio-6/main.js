@@ -3,7 +3,7 @@
 //Elementos de la página
 const inputText = document.querySelector('.js_input');
 
-const parResult = document.querySelector('.js_par');
+const parRsult = document.querySelector('.js_par');
 
 //Funciones
 /**
@@ -13,9 +13,9 @@ const parResult = document.querySelector('.js_par');
  * @returns Valor que contiene en <input> del texto
  */
 
-function cogerInput () {
-    const text = inputText.value
-    return text;
+function cogerInput (ev) {
+  parRsult.innerHTML = ev.currentTarget.value;
+  console.log(ev.currentTarget.value);
 }
 
 /**
@@ -23,8 +23,5 @@ function cogerInput () {
  * js_par (para mostrar el resultado del ejercicio).
  */
 
- function escribirTexto() {
-    parResult.innerHTML = text;
-  }
-  
-parResult.addEventListener('change', cogerInput);
+ 
+inputText.addEventListener('keyup', cogerInput);
