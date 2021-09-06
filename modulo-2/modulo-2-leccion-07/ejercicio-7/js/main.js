@@ -50,9 +50,17 @@ function averageAge() {
 
 //Función que devuelva el nombre de la adalaber más joven.
 function theYoungest() {
-    Math.min.apply(Math, adalabers.map(function(o) { return o.age; }))
-    
+    // Math.min.apply(Math, adalabers.map(function(o) { return o.age; })) -> Ejemplo de stackoverflow
+    let youngestAge = adalabers[0].age;
+    for (const item of adalabers) {
+        if(item.age<youngestAge){
+            youngestAge = item.age;
+        }
+    }
+    return youngestAge;
 }
+
+theYoungest();
 
 //Función que devuelva el número de adalabers que son diseñadoras.
 function countDesigners() {
