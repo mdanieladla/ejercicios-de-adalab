@@ -7,10 +7,13 @@ function getEl(selector){
     } else {
         console.log(dqs)
     }
+    return dqs;
+    
 }
 
-const titleEl = getEl(".red");
+const titleEl = getEl(".re");
+console.log(titleEl)
 
-//EJERCICIOS 5 ¿?
+
 
 
