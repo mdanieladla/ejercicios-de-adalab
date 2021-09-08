@@ -17,12 +17,17 @@ function handlClickBtn () {
         <li>${blueVelvet}</li>
         <li>${split}</li>
     </ul>`;
+
+function printConsole(ev) {
+  console.log(ev.currentTarget.innerHTML);
 }
 
-/*function paintConsole(ev) {
-  const paintFilms = ev.currentTarget;
-  console.log(paintFilms)
-}*/
+inception.addEventListener('click', printConsole);
+theButterFlyEffect.addEventListener('click', printConsole);
+eternalSunshineOfTheSM.addEventListener('click', printConsole);
+blueVelvet.addEventListener('click', printConsole);
+split.addEventListener('click', printConsole);
+
+}
 
 btn.addEventListener('click', handlClickBtn);
-//inception.addEventListener('click', paintConsole);
