@@ -18,10 +18,10 @@ const runners = [
 //1er param : valor que quiero retornar
 //2oparam: cada una de las posciones del array
   const winner = runners.reduce((elmtToCompare,currentTime) => {
-    if(elmtToCompare.time < time.time) {
+    if(elmtToCompare.time < currentTime.time) {
       return elmtToCompare;
     } else {
-      return time
+      return currentTime;
     }
   }  );
   console.log(winner);
@@ -39,6 +39,6 @@ const runners = [
     if(studentsToCompare.time < currentTime.time) {
       return studentsToCompare;
     } else {
-      return currentTime
+      return currentTime;
     }
   });
