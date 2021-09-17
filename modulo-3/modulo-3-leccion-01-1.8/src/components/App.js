@@ -1,10 +1,9 @@
 import '../styles/App.scss';
-import cover from '../images/cover.jpg';
 
 function App() {
   return (
     <div>
-      <header className='header' styles={{ backgroundImage: `url(${cover})` }}>
+      <header className='header'>
         <nav>
           <a
             href='https://adalab.es/'
