@@ -13,15 +13,21 @@ function App() {
   return (
     <div>
       <h1>Hola mundo</h1>
-      <i className={`fas fa-ellipsis-h ${menu}`} onClick={handleMenu}></i>
-      <nav onClick={handleMenu}>
-        <i className={`fas fa-bars ${menu}`}></i>
-        <ul>
-          <li>Octubre</li>
-          <li>Noviembre</li>
-          <li>Diciembre</li>
-        </ul>
-      </nav>
+      <div onClick={handleMenu} className={`${menu}`}>
+        <i className='fas fa-ellipsis-h'></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          excepturi minima ullam corporis quaerat possimus asperiores nemo
+          obcaecati illum, nisi iusto ex fuga eum voluptate voluptatum
+          laboriosam veritatis? Itaque, voluptas.
+          <ul>
+            <li>Octubre</li>
+            <li>Noviembre</li>
+            <li>Diciembre</li>
+          </ul>
+        </p>
+      </div>
+      <i className='fas fa-bars' onClick={handleMenu}></i>
     </div>
   );
 }
