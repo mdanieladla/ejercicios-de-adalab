@@ -1,4 +1,5 @@
 import logo from '../images/adalab-logo-155x61.png';
+import Links from './Link';
 
 const Header = () => {
   return (
@@ -14,24 +15,10 @@ const Header = () => {
       <nav className='nav'>
         <ul className='menu'>
           <li>
-            <a
-              href='https://adalab.es/blog/'
-              rel='noreferrer'
-              target='_blank'
-              className='link'
-            >
-              Blog
-            </a>
+            <Links text='Blog' openInNewTab={true} />
           </li>
           <li>
-            <a
-              href='https://adalab.es/contacto/'
-              rel='noreferrer'
-              target='_blank'
-              className='link'
-            >
-              Contacto
-            </a>
+            <Links text='Contacto' openInNewTab={false} />
           </li>
         </ul>
       </nav>
