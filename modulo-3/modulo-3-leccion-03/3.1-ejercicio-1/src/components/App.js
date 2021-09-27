@@ -2,14 +2,22 @@ import '../styles/App.scss';
 import { useState } from 'react';
 
 function App() {
-  const [checked, setIsChecked] = useState();
+  const [patatas, setPatatas] = useState('');
+  const [cebolla, setCebolla] = useState('');
+  const [huevos, setHuevos] = useState('');
 
-  const handleChecked = (ev) => {
-    setIsChecked(ev.target.checked);
+  const handleIngredient = (ev) => {
+    if (ev.target.id === 'patatas') {
+      setPatatas(ev.target.checked);
+    } else if (ev.target.id === 'cebolla') {
+      setCebolla(ev.target.checked);
+    } else {
+      setHuevos(ev.target.checked);
+    }
   };
 
-  const person = () => {
-    if (checked) {
+  const renderMessage = () => {
+    if (patatas && cebolla && huevos) {
       return 'Eres una persona concebollista';
     } else {
       return 'Eres un robot sin paladar';
@@ -27,9 +35,8 @@ function App() {
           <input
             type='checkbox'
             name='patatas'
-            id='2'
-            checked={checked}
-            onChange={handleChecked}
+            id='patatas'
+            onChange={handleIngredient}
           />
           Patatas
         </label>
@@ -41,9 +48,8 @@ function App() {
           <input
             type='checkbox'
             name='huevos'
-            id='4'
-            checked={checked}
-            onChange={handleChecked}
+            id='huevos'
+            onChange={handleIngredient}
           />
           Huevos
         </label>
@@ -51,9 +57,8 @@ function App() {
           <input
             type='checkbox'
             name='cebolla'
-            id='5'
-            checked={checked}
-            onChange={handleChecked}
+            id='cebolla'
+            onChange={handleIngredient}
           />
           Cebolla
         </label>
@@ -62,7 +67,7 @@ function App() {
           Cerveza
         </label>
       </form>
-      <p>{person()}</p>
+      <p>{renderMessage()}</p>
     </div>
   );
 }
