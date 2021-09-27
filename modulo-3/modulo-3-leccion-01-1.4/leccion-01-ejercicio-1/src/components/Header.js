@@ -1,3 +1,4 @@
+import '../styles/Header.scss';
 import logo from '../images/adalab-logo-155x61.png';
 import Links from './Link';
 
@@ -14,12 +15,8 @@ const Header = () => {
       </a>
       <nav className='nav'>
         <ul className='menu'>
-          <li>
-            <Links text='Blog' openInNewTab={true} />
-          </li>
-          <li>
-            <Links text='Contacto' openInNewTab={false} />
-          </li>
+          <Links openInNewTab={true} className='link' text='Blog' />
+          <Links openInNewTab={false} className='link' text='Contacto' />
         </ul>
       </nav>
     </header>
