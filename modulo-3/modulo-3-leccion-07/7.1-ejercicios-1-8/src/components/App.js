@@ -1,6 +1,8 @@
 // Fichero src/components/App.js
 import { useState } from 'react';
+import InputGroupSelect from './InputGroupSelect';
 import InputGroupText from './InputGroupText';
+import InputGroupRadio from './InputGroupRadio';
 import Preview from './Preview';
 
 const App = () => {
@@ -20,8 +22,8 @@ const App = () => {
     setEmail(value);
   };
 
-  const handleRegion = (ev) => {
-    setRegion(ev.target.value);
+  const handleRegion = (value) => {
+    setRegion(value);
   };
 
   const handlePaymentType = (value) => {
@@ -48,6 +50,16 @@ const App = () => {
   };
 
   // Funciones que nos ayudan a renderizar
+
+  const renderPaymentTypeText = () => {
+    if (paymentType === 'creditCard') {
+      return 'Tarjeta de crédito';
+    } else if (paymentType === 'cash') {
+      return 'Efectivo';
+    } else if (paymentType === 'cashOnDelivery') {
+      return 'Contra reembolso';
+    }
+  };
 
   const isValidForm = () => {
     // El formulario solo es válido cuando los inputs de tipo texto no estén vacíos, cuando se haya marcado una tipo de pago y cuando los términos legales sean true
@@ -86,73 +98,40 @@ const App = () => {
             handleChange={handleEmail}
           />
           {/* region */}
-          <div className='input-group-select'>
-            <label className='label-text' htmlFor='region'>
-              Indica tu región:
-            </label>
-            <select
-              className='input-select'
-              name='region'
-              id='region'
-              value={region}
-              onChange={handleRegion}
-            >
-              <option>España peninsular</option>
-              <option>Islas Canarias</option>
-              <option>Islas Baleares</option>
-              <option>Ceuta</option>
-              <option>Melilla</option>
-            </select>
-          </div>
+          <InputGroupSelect
+            value={region}
+            SelectOption1={'España peninsular'}
+            SelectOption2={'Islas Canarias'}
+            SelectOption3={'Islas Baleares'}
+            SelectOption4={'Ceuta'}
+            SelectOption5={'Melilla'}
+            handleRegion={handleRegion}
+          />
 
           {/* payment type */}
           <label className='label-text'>Indica tu método de pago:</label>
 
-          <div className='input-group-radio'>
-            <label className='label-radio' htmlFor='creditCard'>
-              Tarjeta de crédito
-            </label>
-            {/* Este radio solo debe aparecer activo cuando paymentType sea creditCard */}
-            <input
-              type='radio'
-              name='paymentType'
-              id='creditCard'
-              value='creditCard'
-              checked={paymentType === 'creditCard'}
-              onChange={handlePaymentType}
-            />
-          </div>
-
-          <div className='input-group-radio'>
-            <label className='label-radio' htmlFor='cash'>
-              Efectivo
-            </label>
-            {/* Este radio solo debe aparecer activo cuando paymentType sea cash */}
-            <input
-              type='radio'
-              name='paymentType'
-              id='cash'
-              value='cash'
-              checked={paymentType === 'cash'}
-              onChange={handlePaymentType}
-            />
-          </div>
-
-          <div className='input-group-radio'>
-            <label className='label-radio' htmlFor='cashOnDelivery'>
-              Contra reembolso
-            </label>
-            {/* Este radio solo debe aparecer activo cuando paymentType sea cashOnDelivery */}
-            <input
-              type='radio'
-              name='paymentType'
-              id='cashOnDelivery'
-              value='cashOnDelivery'
-              checked={paymentType === 'cashOnDelivery'}
-              onChange={handlePaymentType}
-            />
-          </div>
-
+          <InputGroupRadio
+            labelText={'Tarjeta de crédito'}
+            radioId={'creditCard'}
+            radioValue={'creditCard'}
+            RadioChecked={paymentType === 'creditCard'}
+            handlePaymentType={handlePaymentType}
+          />
+          <InputGroupRadio
+            labelText={'Efectivo'}
+            radioId={'cash'}
+            radioValue={'cash'}
+            RadioChecked={paymentType === 'cash'}
+            handlePaymentType={handlePaymentType}
+          />
+          <InputGroupRadio
+            labelText={'Contrareembolso'}
+            radioId={'cashOnDelivery'}
+            radioValue={'cashOnDelivery'}
+            RadioChecked={paymentType === 'cashOnDelivery'}
+            handlePaymentType={handlePaymentType}
+          />
           {/* legal terms */}
           <div className='input-group-checkbox'>
             <label className='label-check' htmlFor='legalTerms'>
