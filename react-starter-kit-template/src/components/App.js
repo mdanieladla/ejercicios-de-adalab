@@ -1,5 +1,5 @@
 // Fichero src/components/App.js
-
+import Proptypes from 'prop-types';
 import { Route } from 'react-router-dom';
 
 const App = () => {
