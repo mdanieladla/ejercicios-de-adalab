@@ -19,20 +19,20 @@ function App() {
     setTasks([...tasks]);
   };
 
-  const renderTasks = () => {
-    return tasks.map((eachTask, index) => {
+  const renderTasks = () =>
+    tasks.map((eachTask, index) => {
       return (
         <li
           key={index}
-          className={tasks.completed ? `${addClassName}` : ''}
-          id={index}
+          className={eachTask.completed ? `${addClassName}` : ''}
           onClick={handleClickedTask}
+          id={index}
         >
           {eachTask.task}
         </li>
       );
     });
-  };
+
   return (
     <div>
       <h1>Hola mundo</h1>
